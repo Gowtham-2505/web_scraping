@@ -1,0 +1,14 @@
+Firstly , We need to install Anaconda and have python in path environmental variables
+
+Open Anaconda prompt
+then create a conda virtual environment, using command:
+conda create -n crawler python=3.8
+then use conda activate crawler
+then use pip install -r requirements.txt  to install all the required libraries
+
+create a venv folder using
+python -m venv crawl
+
+use this command to start a scrapy project
+scrapy startproject 'folder_name'
+
