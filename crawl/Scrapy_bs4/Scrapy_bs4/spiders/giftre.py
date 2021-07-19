@@ -2,10 +2,11 @@ import scrapy
 import pandas
 
 class giftreSpider(scrapy.Spider):
-    name = 'giftre'
+    name = 'giftre'   #spider name
     c = 194
     per = 1046
-    #page_number = 2
+    
+    # this is another way to code for inputing website to parser
     #start_urls = ["https://www.giftcart.com/all-gifts/dad.html?p=1"]
     #            "https://www.giftcart.com/all-gifts/boyfriend.html?p=1",
     #            "https://www.giftcart.com/all-gifts/brother.html ",

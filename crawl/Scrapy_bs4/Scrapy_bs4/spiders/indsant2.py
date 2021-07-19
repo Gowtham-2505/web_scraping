@@ -14,10 +14,13 @@ lis = []
 chrome_driver_path = "E:/web crawling/crawls/demo_scrapy/demo_scrapy/spiders/chromedriver"
 delay = 15
 driver = webdriver.Chrome(executable_path = chrome_driver_path)
+
 main_url  = 'https://www.indiasanta.com'
 driver.get(main_url)
+# to get categories and sub-categories
 soup = BeautifulSoup(driver.page_source,'html.parser')
 exp = soup.find('ul',{'class':'main_ul_exp'})
+
 cats = []
 subcats = {}
 ca = exp.find_all('li',{'class':'main_ul_ul col-md-3'})
@@ -32,6 +35,8 @@ for c in ca:
     subcats[c.a.text]= sa
 id = 0
 print(subcats)
+
+#Spider for getting data
 for i in cats:
     for j in subcats[i]: 
         url = 'https://www.indiasanta.com/experience/{}/{}'.format('-'.join(i.split(' ')),'-'.join(j.split(' '))) 

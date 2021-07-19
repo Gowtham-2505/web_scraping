@@ -31,4 +31,5 @@ else:
         rows.append([img,name])
 
 print(rows)
+# to create csv use pandas library
 driver.quit()
