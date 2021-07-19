@@ -20,3 +20,5 @@ we have to run :&nbsp;&nbsp;&nbsp;&nbsp;>>scrapy crawl "spider_name" -o data.jso
 
 To run a spider which have beautifulsoup and selenium<br>
 we have to run :&nbsp;&nbsp;&nbsp;&nbsp;>>python file_name.py
+
+currently scraped sites have only .html powered files and js powered files
