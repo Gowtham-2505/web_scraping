@@ -1,0 +1,9 @@
+While scraping a website for example "amazon.com"
+
+check whether that website allows you to scrape or you will be blocked such that you cannot scrape any other website of that country
+
+you can check by searching
+
+amazon.com/robots.txt
+
+which tells you to proceed or not by checking what values that site is allowing
